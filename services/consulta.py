@@ -1,0 +1,53 @@
+from models.consulta import Consulta
+from models.mascota import Mascota
+from services.data import mascotas, consultas, dueños
+from services.mascota import registrar_mascota
+from datetime import datetime
+
+
+def registrar_consulta():    
+    nombre_mascota = input("Ingrese el nombre de la mascota: ")
+    motivo = input("Ingrese el motivo de la consulta: ")
+    diagnostico = input("Ingrese el diagnóstico de la consulta: ")
+    fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Buscar la mascota en la lista de mascotas
+    mascota_encontrada = None
+    for mascota in mascotas:
+        if mascota.nombre == nombre_mascota:
+            mascota_encontrada = mascota
+            break
+    if mascota_encontrada is None:
+        print("===================================")
+        print("Mascota no encontrada. Se procederá a registrar una nueva mascota.")
+        print("===================================")
+        registrar_mascota(nombre_mascota)
+    
+    # Crear una nueva consulta
+    consulta = Consulta(fecha, motivo, diagnostico, mascota_encontrada)
+    consultas.append(consulta)
+    print("Consulta registrada con éxito.")
+    
+def ver_historial():
+    #ingreso del nombre de la mascota
+    nombre_mascota = input("Ingrese el nombre de la mascota: ")
+    
+    # Buscar la mascota
+    mascota_encontrada = None
+    for mascota in mascotas:
+        if mascota.nombre == nombre_mascota:
+            mascota_encontrada = mascota
+            break
+    if mascota_encontrada is None:
+        print("Mascota no encontrada.")
+        return
+    
+    consultas_mascota = [consulta for consulta in consultas if consulta.mascota == mascota_encontrada]
+    if not consultas_mascota:
+        print("No hay consultas registradas para esta mascota.")
+        return
+    
+    print(f"Historial de consultas para {mascota_encontrada.nombre}:")
+    # Mostrar el historial de consultas
+    for consulta in consultas_mascota:
+        print(consulta.__str__())
