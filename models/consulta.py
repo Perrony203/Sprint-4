@@ -10,7 +10,7 @@ class Consulta:
 
     # Impresión de la información de una instancia consulta 
     def __str__(self):
-        return f"\n Paciente:\n =================================== \n {self.mascota} \n =================================== \n Motivo: {self.motivo} \n Diagnóstico: {self.diagnostico} \n Fecha de revisión: {self.fecha}"
+        return f"\n Paciente:\n{self.mascota} \n =================================== \n Motivo: {self.motivo} \n Diagnóstico: {self.diagnostico} \n Fecha de revisión: {self.fecha}"
 
     # Devolución de la información de una instancia consulta a modo de diccionario 
     def to_dict(self):

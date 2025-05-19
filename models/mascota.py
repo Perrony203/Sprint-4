@@ -11,7 +11,7 @@ class Mascota:
 
     # Impresión de la información de una instancia mascota 
     def __str__(self):
-        return f"\n Nombre: {self.nombre} \n Especie: {self.especie} \n Raza: {self.raza} \n Edad: {self.edad} años \n =================================== \nDueño: {self.dueño}\n"
+        return f"\n Nombre: {self.nombre} \n Especie: {self.especie} \n Raza: {self.raza} \n Edad: {self.edad} años \n =================================== \nDueño: \n{self.dueño}\n"
 
     # Devolución de la información de una instancia mascota a modo de diccionario 
     def to_dict(self):

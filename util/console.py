@@ -14,23 +14,31 @@ def menu_principal():
         print("5. Salir")
 
         opcion = input("Seleccione una opción: ")
-
+        
         try:
             if opcion == "1":
+                print("\n======== Registro de mascota ========\n")
                 registrar_mascota()
             elif opcion == "2":
+                print("\n\n ======== Registro de consulta ========\n")
                 registrar_consulta()
             elif opcion == "3":
+                print("\n\n ======== Mascotas registradas ========\n")
                 listar_mascotas()
             elif opcion == "4":
+                print("\n\n ======== Consultas ========\n")
                 ver_historial()
             elif opcion == "5":
-                print("Gracias por usar la aplicación. ¡Hasta luego!")
+                print("\n Gracias por usar la aplicación. ¡Hasta luego!")
                 break
             else:
-                print("Opción inválida.")
+                raise EntradaInvalidaError("menú", "La opción ingresada no es válida.")
+        except (MascotaNoEncontradaError, DuenoNoEncontradoError,
+                EntradaInvalidaError, ConsultaNoEncontradaError,
+                EntradaVaciaError) as e:
+            print(f"⚠️  {e}")
         except Exception as e:
-            print("❌ Error:", e)
+            print(f"❌ Error inesperado: {e}")
 
         pausar()
 
@@ -43,31 +51,3 @@ def pausar():
     print("===================================")
     input("Presione Enter para realizar una nueva operación...")
 
-def menu_principal():
-    while True:
-        limpiar_pantalla()
-        print("=== Clínica Veterinaria 'Amigos Peludos' ===")
-        print("1. Registrar nueva mascota")
-        print("2. Registrar nueva consulta")
-        print("3. Listar todas las mascotas")
-        print("4. Ver historial de consultas de una mascota")
-        print("5. Salir")
-
-        opcion = input("Seleccione una opción: ")
-
-        if opcion == "1":
-            registrar_mascota()
-        elif opcion == "2":
-            registrar_consulta()
-        elif opcion == "3":
-            listar_mascotas()
-        elif opcion == "4":
-            ver_historial()
-        elif opcion == "5":
-            print("Gracias por usar la aplicación. ¡Hasta luego!")
-            #Se rompe el ciclo principal de ejecución
-            break
-        else:
-            print("Opción inválida.")
-        
-        pausar()

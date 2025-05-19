@@ -1,11 +1,11 @@
 class MascotaNoEncontradaError(Exception):
     def __init__(self, nombre):
-        print(f"La mascota '{nombre}' no fue encontrada.")
+        super().__init__(f"La mascota '{nombre}' no fue encontrada.")
 
 
-class DueñoNoEncontradoError(Exception):
+class DuenoNoEncontradoError(Exception):
     def __init__(self, telefono):
-        print(f"No se encontró dueño con el número {telefono}.")
+        super().__init__(f"No se encontró dueño con el número {telefono}.")
 
 
 class EntradaInvalidaError(Exception):
@@ -13,9 +13,13 @@ class EntradaInvalidaError(Exception):
         mensaje = f"Entrada inválida para el campo '{campo}'."
         if mensaje_extra:
             mensaje += f" {mensaje_extra}"
-        print(mensaje)
+        super().__init__(mensaje)
 
 
 class ConsultaNoEncontradaError(Exception):
     def __init__(self, nombre_mascota):
-        print(f"No hay consultas registradas para '{nombre_mascota}'.")
+        super().__init__(f"No hay consultas registradas para '{nombre_mascota}'.")
+
+class EntradaVaciaError(Exception):
+    def __init__(self, campo):
+        super().__init__(f"El campo '{campo}' no puede estar vacío.")
