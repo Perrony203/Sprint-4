@@ -3,6 +3,7 @@ from models.mascota import Mascota
 from services.data import mascotas, consultas, dueños
 from services.mascota import registrar_mascota
 from datetime import datetime
+from util.exceptions import ConsultaNoEncontradaError, MascotaNoEncontradaError
 
 
 def registrar_consulta():    
@@ -12,16 +13,17 @@ def registrar_consulta():
     fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     # Buscar la mascota en la lista de mascotas
-    mascota_encontrada = None
-    for mascota in mascotas:
-        if mascota.nombre == nombre_mascota:
-            mascota_encontrada = mascota
-            break
+    mascota_encontrada = next((m for m in mascotas if m.nombre == nombre_mascota), None)
+    
     if mascota_encontrada is None:
         print("===================================")
         print("Mascota no encontrada. Se procederá a registrar una nueva mascota.")
         print("===================================")
         registrar_mascota(nombre_mascota)
+        # Buscar nuevamente la mascota después de registrar
+        mascota_encontrada = next((m for m in mascotas if m.nombre == nombre_mascota), None)
+        if mascota_encontrada is None:
+            raise MascotaNoEncontradaError(nombre_mascota)
     
     # Crear una nueva consulta
     consulta = Consulta(fecha, motivo, diagnostico, mascota_encontrada)
@@ -34,18 +36,14 @@ def ver_historial():
     
     # Buscar la mascota
     mascota_encontrada = None
-    for mascota in mascotas:
-        if mascota.nombre == nombre_mascota:
-            mascota_encontrada = mascota
-            break
+    mascota_encontrada = next((m for m in mascotas if m.nombre == nombre_mascota), None)
+    
     if mascota_encontrada is None:
-        print("Mascota no encontrada.")
-        return
+        raise MascotaNoEncontradaError(nombre_mascota)
     
     consultas_mascota = [consulta for consulta in consultas if consulta.mascota == mascota_encontrada]
     if not consultas_mascota:
-        print("No hay consultas registradas para esta mascota.")
-        return
+       raise ConsultaNoEncontradaError(nombre_mascota)
     
     print(f"Historial de consultas para {mascota_encontrada.nombre}:")
     # Mostrar el historial de consultas

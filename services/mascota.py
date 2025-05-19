@@ -2,6 +2,7 @@ from services.data import mascotas, dueños
 from services.dueño import registrar_dueño
 from models.mascota import Mascota
 from models.dueño import Dueño
+from util.exceptions import DueñoNoEncontradoError, EntradaInvalidaError
 
 def registrar_mascota(nombre = None):
     if nombre is None:
@@ -12,7 +13,12 @@ def registrar_mascota(nombre = None):
     # Se solicita la raza de la mascota
     raza = input("Ingrese la raza de la mascota: ")
     # Se solicita la edad de la mascota
-    edad = int(input("Ingrese la edad de la mascota (en años): "))
+    try:
+        edad = int(input("Ingrese la edad de la mascota (en años): "))
+        if edad < 0:
+            raise EntradaInvalidaError("edad", "La edad no puede ser negativa.")
+    except ValueError:
+        raise EntradaInvalidaError("edad", "Debe ser un número entero.")
     
     # Se solicita el numero del dueño
     numero_dueño = input("Ingrese el número de telefono del dueño: ")   
