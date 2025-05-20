@@ -21,8 +21,8 @@ def setup_logger():
     logger = logging.getLogger('clinica_veterinaria')
     logger.setLevel(logging.INFO)
 
-    # Crear el manejador de archivo con codificación UTF-8
-    file_handler = logging.FileHandler('clinica_veterinaria.log', encoding='utf-8')
+    # Crear el manejador de archivo con codificación UTF-8 y escritura inmediata
+    file_handler = logging.FileHandler('clinica_veterinaria.log', encoding='utf-8', mode='a')
     file_handler.setLevel(logging.INFO)
 
     # Crear el manejador de memoria
@@ -46,14 +46,26 @@ logger, memory_handler = setup_logger()
 def log_info(message):
     """Registra un mensaje de nivel INFO"""
     logger.info(message)
+    # Forzar la escritura inmediata
+    for handler in logger.handlers:
+        if isinstance(handler, logging.FileHandler):
+            handler.stream.flush()
 
 def log_warning(message):
     """Registra un mensaje de nivel WARNING"""
     logger.warning(message)
+    # Forzar la escritura inmediata
+    for handler in logger.handlers:
+        if isinstance(handler, logging.FileHandler):
+            handler.stream.flush()
 
 def log_error(message):
     """Registra un mensaje de nivel ERROR"""
     logger.error(message)
+    # Forzar la escritura inmediata
+    for handler in logger.handlers:
+        if isinstance(handler, logging.FileHandler):
+            handler.stream.flush()
 
 def mostrar_logs():
     """Muestra todos los logs almacenados en memoria"""

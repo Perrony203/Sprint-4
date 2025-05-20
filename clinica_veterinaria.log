@@ -15,3 +15,32 @@
 2025-05-19 17:49:22,867 - INFO - Mascota registrada exitosamente: adsa (asdad)
 2025-05-19 20:27:42,233 - ERROR - Mascota no encontrada al intentar ver historial: asd
 2025-05-19 20:27:42,233 - ERROR - Error al ver historial de consultas: asd
+2025-05-19 20:36:12,492 - ERROR - Mascota no encontrada al intentar ver historial: adasd
+2025-05-19 20:36:12,493 - ERROR - Error al ver historial de consultas: La mascota 'adasd' no fue encontrada.
+2025-05-19 20:37:21,333 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-05-19 20:37:23,369 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-05-19 20:37:24,074 - ERROR - Mascota no encontrada al intentar ver historial: ads
+2025-05-19 20:37:24,074 - ERROR - Error al ver historial de consultas: La mascota 'ads' no fue encontrada.
+2025-05-19 20:37:24,074 - ERROR - Error en la operación: La mascota 'ads' no fue encontrada.
+2025-05-19 20:37:36,554 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-05-19 20:37:43,631 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-05-19 20:37:47,377 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-05-19 20:37:48,680 - ERROR - Mascota no encontrada al intentar ver historial: asdads
+2025-05-19 20:37:48,681 - ERROR - Error al ver historial de consultas: La mascota 'asdads' no fue encontrada.
+2025-05-19 20:37:48,681 - ERROR - Error en la operación: La mascota 'asdads' no fue encontrada.
+2025-05-19 20:37:52,977 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-05-19 20:37:55,787 - ERROR - Error en la operación: Entrada inválida para el campo 'edad'. Debe ser un número entero.
+2025-05-19 20:37:59,156 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-05-19 20:37:59,158 - INFO - Aplicación finalizada correctamente
+2025-05-19 20:39:03,537 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-05-19 20:39:13,707 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-05-19 20:39:38,566 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-05-19 20:39:45,963 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-05-19 20:39:53,562 - INFO - Usuario seleccionó: Registrar nueva consulta
+2025-05-19 20:39:55,953 - WARNING - Mascota no encontrada: sad
+2025-05-19 20:39:58,364 - ERROR - Error al registrar consulta: Entrada inválida para el campo 'edad'. Debe ser un número entero.
+2025-05-19 20:39:58,365 - ERROR - Error en la operación: Entrada inválida para el campo 'edad'. Debe ser un número entero.
+2025-05-19 20:39:59,874 - WARNING - Opción inválida seleccionada: sd
+2025-05-19 20:40:00,400 - WARNING - Opción inválida seleccionada: dsa
+2025-05-19 20:40:08,168 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-05-19 20:40:08,168 - INFO - Aplicación finalizada correctamente
