@@ -60,4 +60,6 @@ def mostrar_logs():
     print("\n=== Registro de Actividad ===")
     for log in memory_handler.get_logs():
         print(log)
-    print("===========================\n") 
+    print("===========================\n")
+
+    #holis

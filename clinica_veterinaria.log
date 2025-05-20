@@ -13,3 +13,5 @@
 2025-05-19 17:49:03,818 - ERROR - Error al ver historial de consultas: a
 2025-05-19 17:49:17,156 - WARNING - Dueño no encontrado con teléfono: 123
 2025-05-19 17:49:22,867 - INFO - Mascota registrada exitosamente: adsa (asdad)
+2025-05-19 20:27:42,233 - ERROR - Mascota no encontrada al intentar ver historial: asd
+2025-05-19 20:27:42,233 - ERROR - Error al ver historial de consultas: asd
