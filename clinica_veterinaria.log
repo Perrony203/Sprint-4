@@ -44,3 +44,62 @@
 2025-05-19 20:40:00,400 - WARNING - Opción inválida seleccionada: dsa
 2025-05-19 20:40:08,168 - INFO - Usuario seleccionó: Salir de la aplicación
 2025-05-19 20:40:08,168 - INFO - Aplicación finalizada correctamente
+2025-06-08 17:50:19,011 - WARNING - Archivo de mascotas y dueños no encontrado
+2025-06-08 17:50:19,011 - WARNING - Archivo de consultas no encontrado
+2025-06-08 17:50:19,016 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-08 17:50:21,735 - WARNING - Opción inválida seleccionada: q
+2025-06-08 17:50:32,747 - INFO - Usuario seleccionó: Exportar datos
+2025-06-08 17:50:32,748 - INFO - Datos de mascotas y dueños guardados exitosamente en CSV
+2025-06-08 17:50:32,750 - INFO - Consultas guardadas exitosamente en JSON
+2025-06-08 17:50:46,331 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-08 17:51:16,893 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-08 17:51:23,273 - INFO - Usuario seleccionó: Exportar datos
+2025-06-08 17:51:23,274 - INFO - Datos de mascotas y dueños guardados exitosamente en CSV
+2025-06-08 17:51:23,275 - INFO - Consultas guardadas exitosamente en JSON
+2025-06-08 17:51:39,488 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-08 17:51:39,489 - INFO - Datos de mascotas y dueños guardados exitosamente en CSV
+2025-06-08 17:51:39,491 - INFO - Consultas guardadas exitosamente en JSON
+2025-06-08 17:51:39,494 - INFO - Aplicación finalizada correctamente
+2025-06-08 17:52:48,316 - ERROR - Error al cargar datos desde CSV: Dueño.__init__() missing 1 required positional argument: 'direccion'
+2025-06-08 17:53:34,739 - INFO - Datos de mascotas y dueños cargados exitosamente desde CSV
+2025-06-08 17:53:34,741 - INFO - Consultas cargadas exitosamente desde JSON
+2025-06-08 17:53:34,745 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-08 17:53:48,563 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-08 17:53:56,409 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-08 17:54:01,424 - WARNING - No se encontraron consultas para la mascota: julieta
+2025-06-08 17:54:01,424 - ERROR - Error al ver historial de consultas: No hay consultas registradas para 'julieta'.
+2025-06-08 17:54:01,424 - ERROR - Error en la operación: No hay consultas registradas para 'julieta'.
+2025-06-08 17:54:10,706 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-08 17:54:15,456 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-08 17:54:20,529 - WARNING - No se encontraron consultas para la mascota: julieta
+2025-06-08 17:54:20,529 - ERROR - Error al ver historial de consultas: No hay consultas registradas para 'julieta'.
+2025-06-08 17:54:20,529 - ERROR - Error en la operación: No hay consultas registradas para 'julieta'.
+2025-06-08 17:54:25,118 - INFO - Usuario seleccionó: Registrar nueva consulta
+2025-06-08 17:54:37,976 - INFO - Consulta registrada exitosamente para mascota: julieta
+2025-06-08 17:54:42,016 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-08 17:54:43,915 - INFO - Mostrando historial de consultas para mascota: julieta
+2025-06-08 17:54:52,501 - INFO - Usuario seleccionó: Exportar datos
+2025-06-08 17:54:52,503 - INFO - Datos de mascotas y dueños guardados exitosamente en CSV
+2025-06-08 17:54:52,504 - INFO - Consultas guardadas exitosamente en JSON
+2025-06-08 17:54:58,620 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-08 17:54:58,622 - INFO - Datos de mascotas y dueños guardados exitosamente en CSV
+2025-06-08 17:54:58,622 - INFO - Consultas guardadas exitosamente en JSON
+2025-06-08 17:54:58,627 - INFO - Aplicación finalizada correctamente
+2025-06-08 17:55:54,092 - INFO - Datos de mascotas y dueños cargados exitosamente desde CSV
+2025-06-08 17:55:54,093 - INFO - Consultas cargadas exitosamente desde JSON
+2025-06-08 17:55:54,100 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-08 17:55:56,961 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-08 17:55:59,972 - INFO - Mostrando historial de consultas para mascota: julieta
+2025-06-08 17:56:03,442 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-08 17:56:03,443 - INFO - Datos de mascotas y dueños guardados exitosamente en CSV
+2025-06-08 17:56:03,445 - INFO - Consultas guardadas exitosamente en JSON
+2025-06-08 17:56:03,447 - INFO - Aplicación finalizada correctamente
+2025-06-08 18:03:22,477 - INFO - Datos de mascotas y dueños cargados exitosamente desde CSV
+2025-06-08 18:03:22,478 - INFO - Consultas cargadas exitosamente desde JSON
+2025-06-08 18:03:22,483 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-08 18:03:26,134 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-08 18:03:27,598 - INFO - Mostrando historial de consultas para mascota: julieta
+2025-06-08 18:03:30,424 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-08 18:03:30,426 - INFO - Datos de mascotas y dueños guardados exitosamente en CSV
+2025-06-08 18:03:30,427 - INFO - Consultas guardadas exitosamente en JSON
+2025-06-08 18:03:30,429 - INFO - Aplicación finalizada correctamente
