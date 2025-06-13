@@ -1,6 +1,8 @@
 from services.mascota import registrar_mascota, listar_mascotas
 from services.consulta import registrar_consulta, ver_historial
+from services.data import mascotas, dueños, consultas
 from util.logger import log_info, log_warning, log_error, mostrar_logs
+from util.serializador import guardar_mascotas_dueños, guardar_consultas
 
 # Se insertan 100 saltos de línea en la consola 
 def limpiar_pantalla():
@@ -19,7 +21,8 @@ def menu_principal():
         print("2. Registrar nueva consulta")
         print("3. Listar todas las mascotas")
         print("4. Ver historial de consultas de una mascota")
-        print("5. Salir")
+        print("5. Exportar datos actuales")
+        print("6. Salir")
 
         opcion = input("Seleccione una opción: ")
 
@@ -37,9 +40,17 @@ def menu_principal():
                 log_info("Usuario seleccionó: Ver historial de consultas")
                 ver_historial()
             elif opcion == "5":
+                log_info("Usuario seleccionó: Exportar datos")
+                guardar_mascotas_dueños(mascotas, dueños)
+                guardar_consultas(consultas)
+                print("✅ Datos exportados exitosamente")
+            elif opcion == "6":
                 log_info("Usuario seleccionó: Salir de la aplicación")
+                # Guardar datos antes de salir
+                guardar_mascotas_dueños(mascotas, dueños)
+                guardar_consultas(consultas)
                 print("Gracias por usar la aplicación. ¡Hasta luego!")
-                mostrar_logs()  # Mostrar todos los logs al salir
+                mostrar_logs()
                 break
             else:
                 log_warning(f"Opción inválida seleccionada: {opcion}")

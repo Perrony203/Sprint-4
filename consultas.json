@@ -1,0 +1,17 @@
+[
+    {
+        "fecha": "2025-06-08 17:54:37",
+        "motivo": "dolor",
+        "diagnostico": "fractura",
+        "mascota": {
+            "nombre": "julieta",
+            "especie": "gato",
+            "raza": "gato criollo",
+            "edad": 2,
+            "dueño": {
+                "nombre": "Jose",
+                "telefono": "3117279061"
+            }
+        }
+    }
+]
