@@ -103,3 +103,211 @@
 2025-06-08 18:03:30,426 - INFO - Datos de mascotas y dueños guardados exitosamente en CSV
 2025-06-08 18:03:30,427 - INFO - Consultas guardadas exitosamente en JSON
 2025-06-08 18:03:30,429 - INFO - Aplicación finalizada correctamente
+2025-06-13 13:45:32,278 - INFO - Datos de mascotas y dueños cargados exitosamente desde CSV
+2025-06-13 13:45:32,279 - INFO - Consultas cargadas exitosamente desde JSON
+2025-06-13 13:45:32,366 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 13:45:32,366 - INFO - Conectando a la base de datos...
+2025-06-13 13:45:32,519 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-13 13:45:39,111 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-13 13:45:39,111 - ERROR - Error en la operación: insertar_mascota() missing 3 required positional arguments: 'nombre', 'especie', and 'edad'
+2025-06-13 15:56:25,718 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 15:56:25,718 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 15:56:25,718 - INFO - Conectando a la base de datos...
+2025-06-13 15:56:25,737 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-13 15:56:28,573 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-13 16:02:00,060 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:02:00,060 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:02:00,060 - INFO - Conectando a la base de datos...
+2025-06-13 16:02:00,062 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-13 16:02:04,854 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-13 16:02:38,861 - ERROR - Error en la operación: insertar_mascota() takes 3 positional arguments but 5 were given
+2025-06-13 16:04:20,459 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:04:20,459 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:04:20,459 - INFO - Conectando a la base de datos...
+2025-06-13 16:04:20,460 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-13 16:04:21,906 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-13 16:04:47,162 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-13 16:46:42,119 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:46:42,119 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:46:42,120 - INFO - Conectando a la base de datos...
+2025-06-13 16:46:42,120 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-13 16:46:43,744 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-13 16:46:57,537 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-13 16:48:39,481 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:48:39,481 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:48:39,481 - INFO - Conectando a la base de datos...
+2025-06-13 16:48:39,482 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-13 16:48:40,916 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-13 16:48:54,582 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-13 16:49:29,454 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:49:29,454 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-13 16:49:29,455 - INFO - Conectando a la base de datos...
+2025-06-13 16:49:29,455 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-13 16:49:30,987 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-13 16:49:42,482 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:14:20,109 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:14:20,123 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:14:20,123 - INFO - Conectando a la base de datos...
+2025-06-29 14:14:20,125 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:14:46,821 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:15:01,041 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:17:55,996 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:17:55,996 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:17:55,996 - INFO - Conectando a la base de datos...
+2025-06-29 14:17:55,998 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:17:58,083 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:18:11,192 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:19:02,302 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:19:02,302 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:19:02,302 - INFO - Conectando a la base de datos...
+2025-06-29 14:19:02,303 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:19:03,685 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:19:17,232 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:20:55,023 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:20:55,023 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:20:55,023 - INFO - Conectando a la base de datos...
+2025-06-29 14:20:55,024 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:20:57,795 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:21:09,483 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:21:54,879 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:22:04,487 - ERROR - Error en la operación: Entrada inválida para el campo 'edad'. Debe ser un número entero.
+2025-06-29 14:22:10,425 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:22:30,348 - ERROR - Error en la operación: Entrada inválida para el campo 'nombre del dueño'. No puede estar vacío.
+2025-06-29 14:22:49,199 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:22:49,199 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:22:49,199 - INFO - Conectando a la base de datos...
+2025-06-29 14:22:49,200 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:22:50,986 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:22:56,673 - ERROR - Error en la operación: Entrada inválida para el campo 'edad'. Debe ser un número entero.
+2025-06-29 14:22:59,155 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:23:12,202 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:24:09,909 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:24:09,909 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:24:09,909 - INFO - Conectando a la base de datos...
+2025-06-29 14:24:09,910 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:24:11,053 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:24:20,876 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:26:29,727 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:26:29,727 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:26:29,727 - INFO - Conectando a la base de datos...
+2025-06-29 14:26:29,728 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:26:31,351 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:26:38,787 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:27:17,096 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:27:17,096 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:27:17,096 - INFO - Conectando a la base de datos...
+2025-06-29 14:27:17,097 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:27:18,269 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:27:26,275 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:27:46,860 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:27:46,861 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:27:46,861 - INFO - Conectando a la base de datos...
+2025-06-29 14:27:46,862 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:27:48,674 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:28:01,238 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:28:56,519 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:28:56,519 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:28:56,519 - INFO - Conectando a la base de datos...
+2025-06-29 14:28:56,520 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:28:57,626 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:29:07,996 - ERROR - Error en la operación: 'int' object is not subscriptable
+2025-06-29 14:30:00,540 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:30:00,541 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:30:00,541 - INFO - Conectando a la base de datos...
+2025-06-29 14:30:00,542 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:30:02,740 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:30:17,366 - ERROR - Error en la operación: insertar_mascota() takes 3 positional arguments but 5 were given
+2025-06-29 14:45:20,219 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:45:20,220 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:45:20,220 - INFO - Conectando a la base de datos...
+2025-06-29 14:45:20,221 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:45:22,175 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:45:25,057 - ERROR - Error en la operación: Entrada inválida para el campo 'edad'. Debe ser un número entero.
+2025-06-29 14:45:28,253 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:45:32,091 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:45:52,177 - INFO - Usuario seleccionó: Registrar nueva mascota
+2025-06-29 14:46:29,490 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:46:37,859 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-29 14:46:37,860 - INFO - Aplicación finalizada correctamente
+2025-06-29 14:49:33,026 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:49:33,026 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:49:33,026 - INFO - Conectando a la base de datos...
+2025-06-29 14:49:33,027 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:49:36,177 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:49:36,183 - ERROR - Error en la operación: cannot access local variable 'mascota' where it is not associated with a value
+2025-06-29 14:51:24,688 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-29 14:51:24,689 - INFO - Aplicación finalizada correctamente
+2025-06-29 14:51:25,759 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:51:25,759 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:51:25,760 - INFO - Conectando a la base de datos...
+2025-06-29 14:51:25,761 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:51:28,220 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:52:34,774 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-29 14:52:34,776 - INFO - Aplicación finalizada correctamente
+2025-06-29 14:52:36,237 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:52:36,237 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:52:36,237 - INFO - Conectando a la base de datos...
+2025-06-29 14:52:36,239 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:52:37,923 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:53:10,229 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-29 14:53:10,230 - INFO - Aplicación finalizada correctamente
+2025-06-29 14:53:11,000 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:53:11,000 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:53:11,000 - INFO - Conectando a la base de datos...
+2025-06-29 14:53:11,001 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:53:12,823 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:54:05,755 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-29 14:54:05,757 - INFO - Aplicación finalizada correctamente
+2025-06-29 14:54:06,682 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:54:06,682 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:54:06,682 - INFO - Conectando a la base de datos...
+2025-06-29 14:54:06,683 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:54:08,364 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:54:21,093 - INFO - Usuario seleccionó: Registrar nueva consulta
+2025-06-29 14:54:32,299 - INFO - Consulta registrada exitosamente para mascota: luky
+2025-06-29 14:54:39,723 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-29 14:54:42,413 - INFO - Mostrando historial de consultas para mascota: luky
+2025-06-29 14:57:05,553 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-29 14:57:05,555 - INFO - Aplicación finalizada correctamente
+2025-06-29 14:57:07,319 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:57:07,319 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 14:57:07,319 - INFO - Conectando a la base de datos...
+2025-06-29 14:57:07,320 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 14:57:10,070 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:57:14,965 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-29 14:57:16,193 - WARNING - No se encontraron consultas para la mascota: mia
+2025-06-29 14:57:16,194 - ERROR - Error al ver historial de consultas: No hay consultas registradas para 'mia'.
+2025-06-29 14:57:16,194 - ERROR - Error en la operación: No hay consultas registradas para 'mia'.
+2025-06-29 14:57:20,083 - INFO - Usuario seleccionó: Listar todas las mascotas
+2025-06-29 14:57:27,313 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-29 14:57:30,230 - WARNING - No se encontraron consultas para la mascota: mia
+2025-06-29 14:57:30,231 - ERROR - Error al ver historial de consultas: No hay consultas registradas para 'mia'.
+2025-06-29 14:57:30,231 - ERROR - Error en la operación: No hay consultas registradas para 'mia'.
+2025-06-29 14:58:40,509 - INFO - Usuario seleccionó: Registrar nueva consulta
+2025-06-29 14:58:53,384 - INFO - Consulta registrada exitosamente para mascota: luky
+2025-06-29 14:58:56,044 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-29 14:58:57,558 - INFO - Mostrando historial de consultas para mascota: luky
+2025-06-29 14:58:57,577 - ERROR - Error al ver historial de consultas: unconverted data remains: .176065
+2025-06-29 14:58:57,578 - ERROR - Error en la operación: unconverted data remains: .176065
+2025-06-29 15:00:55,487 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 15:00:55,487 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 15:00:55,487 - INFO - Conectando a la base de datos...
+2025-06-29 15:00:55,488 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 15:00:58,903 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-29 15:01:00,949 - INFO - Mostrando historial de consultas para mascota: luky
+2025-06-29 15:03:20,402 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 15:03:20,402 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 15:03:20,402 - INFO - Conectando a la base de datos...
+2025-06-29 15:03:20,403 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 15:03:23,766 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-29 15:03:26,022 - INFO - Mostrando historial de consultas para mascota: luky
+2025-06-29 15:05:23,014 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-29 15:05:23,015 - INFO - Aplicación finalizada correctamente
+2025-06-29 15:05:24,197 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 15:05:24,197 - INFO - Iniciando aplicación de Clínica Veterinaria 'Amigos Peludos'
+2025-06-29 15:05:24,197 - INFO - Conectando a la base de datos...
+2025-06-29 15:05:24,198 - INFO - Conexión a la base de datos establecida correctamente
+2025-06-29 15:05:27,317 - INFO - Usuario seleccionó: Ver historial de consultas
+2025-06-29 15:05:29,012 - INFO - Mostrando historial de consultas para mascota: luky
+2025-06-29 15:05:38,537 - INFO - Usuario seleccionó: Salir de la aplicación
+2025-06-29 15:05:38,539 - INFO - Aplicación finalizada correctamente
