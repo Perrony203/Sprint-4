@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from veterinariapp.views import landingView
+from veterinariapp.views import landingView, inicioView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', landingView, name='Landing'),
+    path('inicio', inicioView, name='Inicio'),
 ]

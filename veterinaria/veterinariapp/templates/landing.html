@@ -1,13 +1,23 @@
 {% load static %}
-<!DOCTYPE html5>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="{% static 'dist/styles.css' %}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veterinaria Vida Animal</title>
+  <link rel="stylesheet" href="{% static 'src/styles_landing.css' %}">
 </head>
-<body>
-    <h1 class = "text-3xl font-bold ">Welcome to the Landing Page</h1>
+<body class="fondo">
+  <div class="contenedor">
+    <h1 class="titulo">Bienvenidos a vEterInariA</h1>
+    <p class="descripcion">
+      Cuidamos con amor y profesionalismo la salud de tus mascotas.
+    </p>
+    <p class="descripcion">
+       Gracias por confiar en nosotros.
+    </p>
+    <a href="/inicio" class="boton">Ingresar</a>
+  </div>
+
 </body>
-</html5>
+</html>
