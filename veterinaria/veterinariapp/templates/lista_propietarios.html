@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Propietarios</title>
+</head>
+<body>
+    <h1>Lista de Propietarios</h1>
+    <ul>
+        {% for propietario in propietarios %}
+            <li>{{ propietario.nombre }} - {{ propietario.telefono }} - {{ propietario.email }}</li>
+        {% empty %}
+            <li>No hay propietarios registrados.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'registrar_propietario' %}">Registrar nuevo propietario</a>
+    <br>
+    <a href="/">Volver al inicio</a>
+</body>
+</html> 

@@ -7,7 +7,21 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="{% static 'dist/styles.css' %}">
 </head>
-<body>
-    <h1 class = "text-3xl font-bold ">Welcome to the Landing Page</h1>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <h1 class="text-3xl font-bold mb-8">Welcome to the Landing Page</h1>
+    <div class="flex flex-col gap-4 w-full max-w-xs">
+        <a href="{% url 'registrar_propietario' %}">
+            <button class="w-full py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Registrar Propietario</button>
+        </a>
+        <a href="{% url 'lista_propietarios' %}">
+            <button class="w-full py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Lista de Propietarios</button>
+        </a>
+        <a href="{% url 'registrar_mascota' %}">
+            <button class="w-full py-2 px-4 bg-green-600 text-white rounded hover:bg-green-700 transition">Registrar Mascota</button>
+        </a>
+        <a href="{% url 'lista_mascotas' %}">
+            <button class="w-full py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition">Lista de Mascotas</button>
+        </a>
+    </div>
 </body>
 </html5>

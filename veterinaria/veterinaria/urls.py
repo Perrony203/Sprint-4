@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from veterinariapp.views import landingView
+from veterinariapp.views import landingView, registrar_propietario, lista_propietarios, registrar_mascota, lista_mascotas
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', landingView, name='Landing'),
+    path('admin/', admin.site.urls),  # Acceso al panel de administración
+    path('', landingView, name='Landing'),  # Página principal
+    path('registrar-propietario/', registrar_propietario, name='registrar_propietario'),  # Formulario de propietario
+    path('lista-propietarios/', lista_propietarios, name='lista_propietarios'),  # Listado de propietarios
+    path('registrar-mascota/', registrar_mascota, name='registrar_mascota'),  # Formulario de mascota
+    path('lista-mascotas/', lista_mascotas, name='lista_mascotas'),  # Listado de mascotas
 ]
