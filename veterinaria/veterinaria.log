@@ -103,3 +103,43 @@ NameError: name 'BitacoraConsultaForm' is not defined. Did you mean: 'BitacoraCo
 [2025-07-01 23:52:35,632] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
 [2025-07-01 23:52:40,744] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
 [2025-07-01 23:52:58,411] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:38:35,101] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-02 10:38:39,697] INFO veterinariapp.views Acceso a landingView por usuario vorte
+[2025-07-02 10:38:40,762] WARNING django.request Not Found: /favicon.ico
+[2025-07-02 10:38:44,317] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:39:14,917] INFO veterinariapp.views Propietario registrado por usuario vorte
+[2025-07-02 10:39:14,934] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-02 10:39:42,356] INFO veterinariapp.views Mascota registrada por usuario vorte
+[2025-07-02 10:39:42,379] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-02 10:41:04,477] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-02 10:41:09,592] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-02 10:41:40,292] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-02 10:41:41,800] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-02 10:43:43,166] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-02 10:43:45,092] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:43:47,223] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:43:57,944] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:43:59,778] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:44:09,138] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:44:34,098] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-02 10:45:40,070] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-02 10:45:44,224] INFO veterinariapp.views Acceso a landingView por usuario vorte
+[2025-07-02 10:45:45,181] WARNING django.request Not Found: /favicon.ico
+[2025-07-02 10:45:47,185] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:45:54,952] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-02 10:46:13,726] INFO veterinariapp.views Propietario registrado por usuario vorte
+[2025-07-02 10:46:13,742] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-02 10:46:18,160] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-02 10:46:31,714] INFO veterinariapp.views Mascota registrada por usuario vorte
+[2025-07-02 10:46:31,731] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-02 10:47:12,913] INFO veterinariapp.views Veterinario eliminado (id=1) por usuario vorte
+[2025-07-02 10:49:31,257] INFO veterinariapp.views Exportación ZIP completa realizada por el usuario vorte
+[2025-07-02 10:49:31,542] INFO veterinariapp.views Exportación ZIP completa realizada por el usuario vorte
+[2025-07-02 10:50:02,776] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:51:08,113] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:51:09,090] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 10:51:12,160] INFO veterinariapp.views Acceso a landingView por usuario vorte
+[2025-07-02 11:05:36,469] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 11:07:09,324] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-02 11:07:09,692] INFO veterinariapp.views Acceso a landingView por usuario vorte
+[2025-07-02 11:07:11,129] INFO veterinariapp.views Acceso a inicioView por usuario vorte
