@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date
 
 # Modelo para almacenar información de los propietarios de mascotas
 class Propietario(models.Model):
@@ -28,11 +29,58 @@ class Cita(models.Model):
     def __str__(self):
         return f"Cita para {self.mascota.nombre} el {self.fecha_hora.strftime('%d/%m/%Y %H:%M')}"
 
-class Medicamento(models.Model):
+class Veterinario(models.Model):
     nombre = models.CharField(max_length=100)
-    descripcion = models.CharField(max_length=100)
-    cantidad_disponible = models.CharField(max_length=100)
-    fecha_hora_vencimiento = models.DateTimeField()
+    apellido = models.CharField(max_length=100)
+    especialidad = models.CharField(max_length=100)
+    telefono = models.CharField(max_length=20)
+    email = models.EmailField()
     
     def __str__(self):
-        return f"{self.nombre}: Disponibles {self.cantidad_disponible} y vence el {self.fecha_hora_vencimiento.strftime('%d/%m/%Y %H:%M')}"
+        return f"Dr. {self.nombre} {self.apellido} - {self.especialidad}"
+    
+    @property
+    def nombre_completo(self):
+        return f"{self.nombre} {self.apellido}"
+
+class Medicamento(models.Model):
+    nombre = models.CharField(max_length=200)
+    descripcion = models.TextField()
+    cantidad_disponible = models.PositiveIntegerField()
+    fecha_vencimiento = models.DateField()
+    
+    def __str__(self):
+        return f"{self.nombre} - Stock: {self.cantidad_disponible}"
+    
+    @property
+    def esta_vencido(self):
+        return self.fecha_vencimiento < date.today()
+    
+    @property
+    def stock_bajo(self):
+        return self.cantidad_disponible < 10
+
+class BitacoraConsulta(models.Model):
+    mascota = models.ForeignKey(Mascota, on_delete=models.CASCADE, related_name='bitacoras')
+    fecha_consulta = models.DateTimeField(auto_now_add=True)
+    observaciones = models.TextField()
+    diagnostico = models.TextField()
+    tratamiento = models.TextField()
+    proxima_revision = models.DateField(null=True, blank=True)
+    
+    def __str__(self):
+        return f"Bitácora de {self.mascota.nombre} - {self.fecha_consulta.strftime('%d/%m/%Y %H:%M')}"
+    
+    class Meta:
+        ordering = ['-fecha_consulta']
+
+class Cirugia(models.Model):
+    mascota = models.ForeignKey(Mascota, on_delete=models.CASCADE, related_name='cirugias')
+    veterinario = models.ForeignKey(Veterinario, on_delete=models.CASCADE, related_name='cirugias')
+    fecha = models.DateTimeField()
+    tipo = models.CharField(max_length=100)
+    descripcion = models.TextField()
+    estado = models.CharField(max_length=50, choices=[('Programada', 'Programada'), ('Realizada', 'Realizada'), ('Cancelada', 'Cancelada')], default='Programada')
+
+    def __str__(self):
+        return f"{self.tipo} para {self.mascota.nombre} el {self.fecha.strftime('%d/%m/%Y %H:%M')} ({self.estado})"

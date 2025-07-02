@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Bitácoras de Consulta - vEterInariA</title>
+    <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
+</head>
+<body>
+    {% include "topbar.html" %}
+    <div class="main-container">
+        <div class="card">
+            <h2>📋 Bitácoras de Consulta</h2>
+            {% if bitacoras %}
+                <ul style="list-style: none; padding: 0;">
+                    {% for bitacora in bitacoras %}
+                        <li class="list-item">
+                            <strong>Mascota:</strong> {{ bitacora.mascota.nombre }}<br>
+                            <strong>Propietario:</strong> {{ bitacora.mascota.propietario.nombre }}<br>
+                            <strong>Fecha:</strong> {{ bitacora.fecha_consulta|date:'d/m/Y H:i' }}<br>
+                            <strong>Observaciones:</strong> {{ bitacora.observaciones }}<br>
+                            <strong>Diagnóstico:</strong> {{ bitacora.diagnostico }}<br>
+                            <strong>Tratamiento:</strong> {{ bitacora.tratamiento }}<br>
+                            {% if bitacora.proxima_revision %}<strong>Próxima revisión:</strong> {{ bitacora.proxima_revision|date:'d/m/Y' }}<br>{% endif %}
+                            <div style="margin-top: 0.5rem;">
+                                <a href="{% url 'editar_bitacora' bitacora.pk %}" class="btn">✏️ Editar</a>
+                                <a href="{% url 'eliminar_bitacora' bitacora.pk %}" class="btn btn-secondary">🗑️ Eliminar</a>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No hay bitácoras registradas.</p>
+            {% endif %}
+            <div style="margin-top: 2rem;">
+                <a href="{% url 'registrar_bitacora' %}" class="btn">➕ Registrar Nueva Bitácora</a>
+                <a href="{% url 'inicio' %}" class="btn btn-secondary">🏠 Volver al Inicio</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Veterinaria Vida Animal - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html> 

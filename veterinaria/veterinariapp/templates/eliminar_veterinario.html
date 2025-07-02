@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Veterinario - vEterInariA</title>
+    <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
+</head>
+<body>
+    {% include "topbar.html" %}
+    <div class="main-container">
+        <div class="card">
+            <h2>🗑️ Eliminar Veterinario</h2>
+            <p>¿Estás seguro de que deseas eliminar al veterinario <strong>Dr. {{ veterinario.nombre }} {{ veterinario.apellido }}</strong> ({{ veterinario.especialidad }})?</p>
+            <form method="post">
+                {% csrf_token %}
+                <div style="margin-top: 1.5rem;">
+                    <button type="submit" class="btn" style="background-color: #e74c3c;">🗑️ Eliminar</button>
+                    <a href="{% url 'lista_veterinarios' %}" class="btn btn-secondary">❌ Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Veterinaria Vida Animal - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html> 

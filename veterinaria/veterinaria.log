@@ -1,0 +1,105 @@
+[2025-07-01 23:43:28,035] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:43:28,050] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:43:28,059] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:43:34,375] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinaria\settings.py changed, reloading.
+[2025-07-01 23:43:34,383] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinaria\settings.py changed, reloading.
+[2025-07-01 23:43:34,402] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinaria\settings.py changed, reloading.
+[2025-07-01 23:43:35,649] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:43:35,649] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:43:35,649] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:45:42,962] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:45:43,517] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:45:43,558] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:45:44,392] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:45:45,303] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:45:45,322] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:45:46,703] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:45:47,389] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:45:47,416] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:45:48,119] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:45:48,817] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:45:48,831] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:46:17,385] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-01 23:46:22,253] ERROR django.request Internal Server Error: /editar-bitacora/3/
+Traceback (most recent call last):
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py", line 96, in editar_bitacora
+    form = BitacoraConsultaForm(instance=bitacora)
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'BitacoraConsultaForm' is not defined. Did you mean: 'BitacoraConsulta'?
+[2025-07-01 23:46:38,265] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-01 23:46:39,637] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-01 23:49:01,602] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-01 23:49:11,101] ERROR django.request Internal Server Error: /editar-bitacora/3/
+Traceback (most recent call last):
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py", line 96, in editar_bitacora
+    form = BitacoraConsultaForm(instance=bitacora)
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'BitacoraConsultaForm' is not defined. Did you mean: 'BitacoraConsulta'?
+[2025-07-01 23:50:10,854] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-01 23:50:15,277] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-01 23:50:36,543] ERROR django.request Internal Server Error: /registrar-bitacora/
+Traceback (most recent call last):
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py", line 81, in registrar_bitacora
+    form = BitacoraConsultaForm()
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'BitacoraConsultaForm' is not defined. Did you mean: 'BitacoraConsulta'?
+[2025-07-01 23:50:40,232] ERROR django.request Internal Server Error: /editar-bitacora/2/
+Traceback (most recent call last):
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py", line 96, in editar_bitacora
+    form = BitacoraConsultaForm(instance=bitacora)
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'BitacoraConsultaForm' is not defined. Did you mean: 'BitacoraConsulta'?
+[2025-07-01 23:51:38,050] ERROR django.request Internal Server Error: /editar-bitacora/1/
+Traceback (most recent call last):
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py", line 96, in editar_bitacora
+    form = BitacoraConsultaForm(instance=bitacora)
+           ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'BitacoraConsultaForm' is not defined. Did you mean: 'BitacoraConsulta'?
+[2025-07-01 23:52:02,974] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:52:03,041] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:52:03,232] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:52:05,027] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:52:05,121] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:52:07,492] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:52:07,541] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:52:07,557] INFO django.utils.autoreload C:\Users\vorte\Downloads\UNIVERSIDAD\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:52:09,691] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:52:09,701] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:52:09,767] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:52:24,880] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-01 23:52:26,463] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-01 23:52:30,784] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-01 23:52:32,153] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-01 23:52:35,632] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
+[2025-07-01 23:52:40,744] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
+[2025-07-01 23:52:58,411] INFO veterinariapp.views Acceso a inicioView por usuario vorte

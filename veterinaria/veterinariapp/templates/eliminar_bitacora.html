@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Bitácora de Consulta - vEterInariA</title>
+    <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
+</head>
+<body>
+    {% include "topbar.html" %}
+    <div class="main-container">
+        <div class="card">
+            <h2>🗑️ Eliminar Bitácora de Consulta</h2>
+            <p>¿Estás seguro de que deseas eliminar la bitácora de <strong>{{ bitacora.mascota.nombre }}</strong> del <strong>{{ bitacora.fecha_consulta|date:'d/m/Y H:i' }}</strong>?</p>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-secondary">Sí, eliminar</button>
+                <a href="{% url 'lista_bitacoras' %}" class="btn">Cancelar</a>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Veterinaria Vida Animal - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html> 

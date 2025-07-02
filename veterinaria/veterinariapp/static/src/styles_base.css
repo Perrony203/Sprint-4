@@ -114,8 +114,6 @@ body {
   background-color: #545b62;
 }
 
-
-
 /* Listas */
 .list-item {
   background-color: #e8f5e9;
@@ -171,6 +169,7 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
+  margin-right: 6rem;
 }
 
 .nav-links a {
@@ -241,4 +240,30 @@ body {
   .card {
     padding: 1rem;
   }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.table th, .table td {
+  padding: 1rem;
+  text-align: left;
+}
+.table th {
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 600;
+  border-bottom: 2px solid #c8e6c9;
+}
+.table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+.table tr:hover {
+  background: #f1f8e9;
 } 

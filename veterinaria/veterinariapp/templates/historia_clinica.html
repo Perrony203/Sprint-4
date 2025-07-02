@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica - vEterInariA</title>
+    <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
+    <style>
+        .accordion {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            cursor: pointer;
+            padding: 1rem;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2rem;
+            transition: background-color 0.2s ease;
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #c8e6c9;
+        }
+        .panel {
+            padding: 0 1rem 1rem 1rem;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+            border-radius: 0 0 0.5rem 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .panel.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    {% include "topbar.html" %}
+    <div class="main-container">
+        <div class="card">
+            <h2>📖 Historia Clínica de Mascotas</h2>
+            {% for mascota in mascotas %}
+                <button class="accordion">🐾 {{ mascota.nombre }} ({{ mascota.especie }}) - Propietario: {{ mascota.propietario.nombre }}</button>
+                <div class="panel">
+                    {% if mascota.bitacoras.all %}
+                        {% if mascota.bitacoras.count > 0 %}
+                            <ul style="list-style: none; padding: 0;">
+                                {% for bitacora in mascota.bitacoras.all %}
+                                    <li class="list-item">
+                                        <strong>Fecha:</strong> {{ bitacora.fecha_consulta|date:'d/m/Y H:i' }}<br>
+                                        <strong>Observaciones:</strong> {{ bitacora.observaciones }}<br>
+                                        <strong>Diagnóstico:</strong> {{ bitacora.diagnostico }}<br>
+                                        <strong>Tratamiento:</strong> {{ bitacora.tratamiento }}<br>
+                                        {% if bitacora.proxima_revision %}<strong>Próxima revisión:</strong> {{ bitacora.proxima_revision|date:'d/m/Y' }}<br>{% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <p>No hay bitácoras para esta mascota.</p>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Veterinaria Vida Animal - Todos los derechos reservados</p>
+    </footer>
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+        accordions.forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                panel.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html> 

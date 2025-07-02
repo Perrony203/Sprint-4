@@ -13,6 +13,7 @@
       <div class="dropdown-content">
         <a href="{% url 'registrar_propietario' %}">Propietario</a>
         <a href="{% url 'registrar_mascota' %}">Mascota</a>
+        <a href="{% url 'registrar_veterinario' %}">Veterinario</a>
         <a href="{% url 'registrar_cita' %}">Cita</a>
       </div>
     </div>
@@ -22,10 +23,13 @@
       <div class="dropdown-content">
         <a href="{% url 'lista_propietarios' %}">Propietarios</a>
         <a href="{% url 'lista_mascotas' %}">Mascotas</a>
+        <a href="{% url 'lista_veterinarios' %}">Veterinarios</a>
         <a href="{% url 'lista_citas' %}">Citas</a>
+        <a href="{% url 'lista_medicamentos' %}">Medicamentos</a>
+        <a href="{% url 'lista_bitacoras' %}">Bitácoras</a>
+        <a href="{% url 'lista_cirugias' %}">Cirugías</a>
+        <a href="{% url 'historia_clinica' %}">Historia Clínica</a>
+        <a href="{% url 'exportar_todo_zip' %}" class="btn btn-secondary">⬇️ Exportar Todo (ZIP)</a>
       </div>
     </div>
-
-    <a href="{% url 'lista_medicamentos' %}">Medicamentos</a>
-  </div>
 </nav>

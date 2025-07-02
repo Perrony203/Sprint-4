@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cirugías - vEterInariA</title>
+    <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
+</head>
+<body>
+    {% include "topbar.html" %}
+    <div class="main-container">
+        <div class="card">
+            <h2>🔪 Cirugías</h2>
+            {% if cirugias %}
+                <ul style="list-style: none; padding: 0;">
+                    {% for cirugia in cirugias %}
+                        <li class="list-item">
+                            <strong>Mascota:</strong> {{ cirugia.mascota.nombre }}<br>
+                            <strong>Propietario:</strong> {{ cirugia.mascota.propietario.nombre }}<br>
+                            <strong>Veterinario:</strong> {{ cirugia.veterinario.nombre_completo }}<br>
+                            <strong>Fecha:</strong> {{ cirugia.fecha|date:'d/m/Y H:i' }}<br>
+                            <strong>Tipo:</strong> {{ cirugia.tipo }}<br>
+                            <strong>Estado:</strong> 
+                            {% if cirugia.estado == 'Programada' %}
+                                <span style="color: #f39c12;">⏰ {{ cirugia.estado }}</span>
+                            {% elif cirugia.estado == 'Realizada' %}
+                                <span style="color: #27ae60;">✅ {{ cirugia.estado }}</span>
+                            {% else %}
+                                <span style="color: #e74c3c;">❌ {{ cirugia.estado }}</span>
+                            {% endif %}<br>
+                            <strong>Descripción:</strong> {{ cirugia.descripcion }}<br>
+                            <div style="margin-top: 0.5rem;">
+                                <a href="{% url 'editar_cirugia' cirugia.pk %}" class="btn">✏️ Editar</a>
+                                <a href="{% url 'eliminar_cirugia' cirugia.pk %}" class="btn btn-secondary">🗑️ Eliminar</a>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No hay cirugías registradas.</p>
+            {% endif %}
+            <div style="margin-top: 2rem;">
+                <a href="{% url 'registrar_cirugia' %}" class="btn">➕ Registrar Nueva Cirugía</a>
+                <a href="{% url 'inicio' %}" class="btn btn-secondary">🏠 Volver al Inicio</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Veterinaria Vida Animal - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html> 

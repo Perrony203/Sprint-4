@@ -1,5 +1,5 @@
 from django import forms
-from .models import Propietario, Mascota, Cita, Medicamento
+from .models import Propietario, Mascota, Cita, Cirugia, BitacoraConsulta, Medicamento, Veterinario
 
 # Formulario para registrar propietarios usando el modelo Propietario
 class PropietarioForm(forms.ModelForm):
@@ -20,12 +20,33 @@ class CitaForm(forms.ModelForm):
         fields = ['mascota', 'fecha_hora', 'motivo', 'notas']
         widgets = {
             'fecha_hora': forms.DateTimeInput(attrs={'type': 'datetime-local'}),
-        } 
-        
+        }
+
+class BitacoraConsultaForm(forms.ModelForm):
+    class Meta:
+        model = BitacoraConsulta
+        fields = ['mascota', 'observaciones', 'diagnostico', 'tratamiento', 'proxima_revision']
+        widgets = {
+            'proxima_revision': forms.DateInput(attrs={'type': 'date'}),
+        }
+
 class MedicamentoForm(forms.ModelForm):
     class Meta:
         model = Medicamento
-        fields = ['nombre', 'descripcion', 'cantidad_disponible', 'fecha_hora_vencimiento']
+        fields = ['nombre', 'descripcion', 'cantidad_disponible', 'fecha_vencimiento']
         widgets = {
-            'fecha_hora_vencimiento': forms.DateInput(attrs={'type': 'date'}),
+            'fecha_vencimiento': forms.DateInput(attrs={'type': 'date'}),
         }
+
+class CirugiaForm(forms.ModelForm):
+    class Meta:
+        model = Cirugia
+        fields = ['mascota', 'veterinario', 'fecha', 'tipo', 'descripcion', 'estado']
+        widgets = {
+            'fecha': forms.DateTimeInput(attrs={'type': 'datetime-local'}),
+        }
+
+class VeterinarioForm(forms.ModelForm):
+    class Meta:
+        model = Veterinario
+        fields = ['nombre', 'apellido', 'especialidad', 'telefono', 'email']
