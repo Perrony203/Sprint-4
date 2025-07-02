@@ -1,5 +1,5 @@
 from django import forms
-from .models import Propietario, Mascota, Cita
+from .models import Propietario, Mascota, Cita, Medicamento
 
 # Formulario para registrar propietarios usando el modelo Propietario
 class PropietarioForm(forms.ModelForm):
@@ -21,3 +21,11 @@ class CitaForm(forms.ModelForm):
         widgets = {
             'fecha_hora': forms.DateTimeInput(attrs={'type': 'datetime-local'}),
         } 
+        
+class MedicamentoForm(forms.ModelForm):
+    class Meta:
+        model = Medicamento
+        fields = ['nombre', 'descripcion', 'cantidad_disponible', 'fecha_hora_vencimiento']
+        widgets = {
+            'fecha_hora_vencimiento': forms.DateInput(attrs={'type': 'date'}),
+        }

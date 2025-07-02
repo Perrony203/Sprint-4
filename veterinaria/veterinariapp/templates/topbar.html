@@ -1,14 +1,31 @@
 <nav class="topbar">
-    <a href="{% url 'inicio' %}" class="logo">
-        <h1>🐾 vEterInariA</h1>
-        <p>Cuidamos a tus mascotas como parte de nuestra familia</p>
-    </a>
-    <div class="nav-links">
-        <a href="{% url 'registrar_propietario' %}">Registrar Propietario</a>
-        <a href="{% url 'registrar_mascota' %}">Registrar Mascota</a>
-        <a href="{% url 'registrar_cita' %}">Registrar Cita</a>
+  <a href="{% url 'inicio' %}" class="logo">
+    <h1>🐾 vEterInariA</h1>
+    <p>Cuidamos a tus mascotas como parte de nuestra familia</p>
+  </a>
+
+  <div class="nav-links">
+
+    <a href="{% url 'inicio' %}">Inicio</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Registrar ▾</button>
+      <div class="dropdown-content">
+        <a href="{% url 'registrar_propietario' %}">Propietario</a>
+        <a href="{% url 'registrar_mascota' %}">Mascota</a>
+        <a href="{% url 'registrar_cita' %}">Cita</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Listar ▾</button>
+      <div class="dropdown-content">
         <a href="{% url 'lista_propietarios' %}">Propietarios</a>
         <a href="{% url 'lista_mascotas' %}">Mascotas</a>
         <a href="{% url 'lista_citas' %}">Citas</a>
+      </div>
     </div>
-</nav> 
+
+    <a href="{% url 'lista_medicamentos' %}">Medicamentos</a>
+  </div>
+</nav>

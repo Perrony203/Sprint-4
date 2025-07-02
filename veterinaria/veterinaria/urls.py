@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from veterinariapp.views import landingView, inicioView, registrar_propietario, lista_propietarios, registrar_mascota, lista_mascotas, registrar_cita, lista_citas
+from veterinariapp.views import landingView, inicioView, registrar_propietario, lista_propietarios, registrar_mascota, lista_mascotas, registrar_cita, lista_citas, lista_medicamentos, agregar_medicamento, editar_medicamento, eliminar_medicamento
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # Acceso al panel de administración
@@ -29,4 +29,8 @@ urlpatterns = [
     path('lista-mascotas/', lista_mascotas, name='lista_mascotas'),  # Listado de mascotas
     path('registrar-cita/', registrar_cita, name='registrar_cita'),  # Formulario de cita
     path('lista-citas/', lista_citas, name='lista_citas'),  # Listado de citas
+    path('medicamentos/', lista_medicamentos, name = 'lista_medicamentos'),  # URL para medicamentos
+    path('agregar-medicamento/', agregar_medicamento, name='agregar_medicamento'),  # URL para agregar medicamento
+    path('editar-medicamento/<str:nombre>/', editar_medicamento, name='editar_medicamento'),  # URL para editar medicamento
+    path('eliminar-medicamento/<str:nombre>/', eliminar_medicamento, name='eliminar_medicamento')
 ]

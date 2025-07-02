@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import PropietarioForm, MascotaForm, CitaForm
+from .forms import PropietarioForm, MascotaForm, CitaForm, MedicamentoForm
 from .models import Cita
 
 # Página principal de bienvenida
@@ -57,3 +57,41 @@ def registrar_cita(request):
 def lista_citas(request):
     citas = Cita.objects.select_related('mascota', 'mascota__propietario').all().order_by('-fecha_hora')
     return render(request, 'lista_citas.html', {'citas': citas})
+
+def lista_medicamentos(request):
+    from .models import Medicamento
+    medicamentos = Medicamento.objects.all()    
+    return render(request, 'lista_medicamentos.html', {'medicamentos': medicamentos})
+
+def agregar_medicamento(request):
+    if request.method == 'POST':
+        form = MedicamentoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('lista_medicamentos')
+    else:
+        form = MedicamentoForm()
+    return render(request, 'agregar_medicamento.html', {'form': form})
+
+def editar_medicamento(request, nombre):
+    from .models import Medicamento
+    medicamento = Medicamento.objects.get(nombre=nombre)
+    
+    if request.method == 'POST':
+        form = MedicamentoForm(request.POST, instance=medicamento)
+        if form.is_valid():
+            form.save()
+            return redirect('lista_medicamentos')
+    else:
+        form = MedicamentoForm(instance=medicamento)
+    
+    return render(request, 'editar_medicamento.html', {'form': form, 'medicamento': medicamento})
+
+def eliminar_medicamento(request, nombre):
+    from .models import Medicamento
+    medicamento = Medicamento.objects.get(nombre=nombre)
+    
+    if medicamento:
+        medicamento.delete()
+        
+    return redirect('lista_medicamentos')

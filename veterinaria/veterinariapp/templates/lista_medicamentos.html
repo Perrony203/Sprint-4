@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Medicamentos - vEterInariA</title>
+    <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
+</head>
+<body>
+    {% include "topbar.html" %}
+
+    <div class="main-container">
+        <div class="card">
+            <h2>💊​ Lista de Medicamentos almacenados</h2>
+
+            {% if medicamentos %}
+                <ul style="list-style: none; padding: 0;">
+                    {% for medicamento in medicamentos %}
+                        <li class="list-item">
+                            <strong>{{ medicamento.nombre }}</strong> - {{ medicamento.descripcion }} - {{ medicamento.cantidad_disponible }} unidades
+                            <br>
+                            <small>Fecha de vencimiento: {{ medicamento.fecha_hora_vencimiento }}</small>
+                            <br>
+                            <a href="{% url 'editar_medicamento' medicamento.nombre%}" class="btn">​⚙️​ Editar</a>
+                            <a href="{% url 'eliminar_medicamento' medicamento.nombre %}" class="btn">🗑️ Eliminar</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No hay medicamentos registrados.</p>
+            {% endif %}
+
+            <div style="margin-top: 2rem;">
+                <a href="{% url 'agregar_medicamento' %}" class="btn">➕ Agregar Nuevo Medicamento</a>
+            </div>            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Veterinaria Vida Animal - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html> 

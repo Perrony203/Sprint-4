@@ -27,3 +27,12 @@ class Cita(models.Model):
 
     def __str__(self):
         return f"Cita para {self.mascota.nombre} el {self.fecha_hora.strftime('%d/%m/%Y %H:%M')}"
+
+class Medicamento(models.Model):
+    nombre = models.CharField(max_length=100)
+    descripcion = models.CharField(max_length=100)
+    cantidad_disponible = models.CharField(max_length=100)
+    fecha_hora_vencimiento = models.DateTimeField()
+    
+    def __str__(self):
+        return f"{self.nombre}: Disponibles {self.cantidad_disponible} y vence el {self.fecha_hora_vencimiento.strftime('%d/%m/%Y %H:%M')}"
