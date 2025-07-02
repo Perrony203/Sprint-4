@@ -103,3 +103,14 @@ NameError: name 'BitacoraConsultaForm' is not defined. Did you mean: 'BitacoraCo
 [2025-07-01 23:52:35,632] INFO veterinariapp.views Acceso a lista_mascotas por usuario vorte
 [2025-07-01 23:52:40,744] INFO veterinariapp.views Acceso a lista_propietarios por usuario vorte
 [2025-07-01 23:52:58,411] INFO veterinariapp.views Acceso a inicioView por usuario vorte
+[2025-07-01 23:55:57,415] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:56:18,741] INFO veterinariapp.views Acceso a landingView por usuario AnonymousUser
+[2025-07-01 23:56:22,771] INFO veterinariapp.views Acceso a inicioView por usuario AnonymousUser
+[2025-07-01 23:56:35,093] INFO veterinariapp.views Acceso a lista_mascotas por usuario AnonymousUser
+[2025-07-01 23:57:26,909] INFO django.utils.autoreload D:\Universidad\2025-1\Curso Py\Sprint 4\Sprint-4\veterinaria\veterinaria\urls.py changed, reloading.
+[2025-07-01 23:57:28,462] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:59:08,258] INFO django.utils.autoreload D:\Universidad\2025-1\Curso Py\Sprint 4\Sprint-4\veterinaria\veterinariapp\views.py changed, reloading.
+[2025-07-01 23:59:10,476] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:59:30,960] INFO django.utils.autoreload D:\Universidad\2025-1\Curso Py\Sprint 4\Sprint-4\veterinaria\veterinaria\urls.py changed, reloading.
+[2025-07-01 23:59:32,260] INFO django.utils.autoreload Watching for file changes with StatReloader
+[2025-07-01 23:59:42,328] INFO veterinariapp.views Acceso a lista_mascotas por usuario AnonymousUser

@@ -223,43 +223,6 @@ def eliminar_veterinario(request, pk):
         return redirect('lista_veterinarios')
     return render(request, 'eliminar_veterinario.html', {'veterinario': veterinario})
 
-def exportar_propietarios_csv(request):
-    try:
-        response = HttpResponse(content_type='text/csv')
-        response['Content-Disposition'] = 'attachment; filename="propietarios.csv"'
-        writer = csv.writer(response)
-        writer.writerow(['ID', 'Nombre', 'Teléfono', 'Email'])
-        from .models import Propietario
-        propietarios = Propietario.objects.all()
-        logger.debug(f"Se encontraron {propietarios.count()} propietarios para exportar.")
-        for propietario in propietarios:
-            writer.writerow([propietario.id, propietario.nombre, getattr(propietario, 'telefono', ''), getattr(propietario, 'email', '')])
-        logger.info(f"Exportación de propietarios realizada por el usuario {request.user}")
-        return response
-    except Exception as e:
-        logger.error(f"Error exportando propietarios: {e}")
-        return HttpResponse('Ocurrió un error al exportar propietarios.', status=500)
-
-def exportar_mascotas_csv(request):
-    try:
-        response = HttpResponse(content_type='text/csv')
-        response['Content-Disposition'] = 'attachment; filename="mascotas.csv"'
-        writer = csv.writer(response)
-        writer.writerow(['ID', 'Nombre', 'Especie', 'Edad', 'Propietario'])
-        for mascota in Mascota.objects.select_related('propietario').all():
-            writer.writerow([
-                mascota.id,
-                mascota.nombre,
-                mascota.especie,
-                mascota.edad,
-                mascota.propietario.nombre if mascota.propietario else ''
-            ])
-        logger.info(f"Exportación de mascotas realizada por el usuario {request.user}")
-        return response
-    except Exception as e:
-        logger.error(f"Error exportando mascotas: {e}")
-        return HttpResponse('Ocurrió un error al exportar mascotas.', status=500)
-
 def exportar_todo_zip(request):
     try:
         buffer = io.BytesIO()
