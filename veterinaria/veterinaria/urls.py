@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from veterinariapp.views import landingView, inicioView, registrar_propietario, lista_propietarios, registrar_mascota, lista_mascotas, registrar_cita, lista_citas, registrar_bitacora, lista_bitacoras, editar_bitacora, eliminar_bitacora, historia_clinica, lista_medicamentos, agregar_medicamento, editar_medicamento, eliminar_medicamento, lista_cirugias, registrar_cirugia, editar_cirugia, eliminar_cirugia, registrar_veterinario, lista_veterinarios, editar_veterinario, eliminar_veterinario, exportar_propietarios_csv, exportar_mascotas_csv, exportar_todo_zip
+from veterinariapp.views import landingView, inicioView, registrar_propietario, lista_propietarios, registrar_mascota, lista_mascotas, registrar_cita, lista_citas, registrar_bitacora, lista_bitacoras, editar_bitacora, eliminar_bitacora, historia_clinica, lista_medicamentos, agregar_medicamento, editar_medicamento, eliminar_medicamento, lista_cirugias, registrar_cirugia, editar_cirugia, eliminar_cirugia, registrar_veterinario, lista_veterinarios, editar_veterinario, eliminar_veterinario, exportar_todo_zip
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # Acceso al panel de administración
@@ -46,7 +46,5 @@ urlpatterns = [
     path('registrar-veterinario/', registrar_veterinario, name='registrar_veterinario'),  # Registrar veterinario
     path('editar-veterinario/<int:pk>/', editar_veterinario, name='editar_veterinario'),  # Editar veterinario
     path('eliminar-veterinario/<int:pk>/', eliminar_veterinario, name='eliminar_veterinario'),  # Eliminar veterinario
-    path('exportar-propietarios/', exportar_propietarios_csv, name='exportar_propietarios_csv'),
-    path('exportar-mascotas/', exportar_mascotas_csv, name='exportar_mascotas_csv'),
     path('exportar-todo/', exportar_todo_zip, name='exportar_todo_zip'),
 ]

@@ -114,6 +114,14 @@ body {
   background-color: #545b62;
 }
 
+.btn-special {
+  background-color: #bbf7d0;
+}
+
+.btn-special:hover {
+  background-color: #00ff7b
+}
+
 /* Listas */
 .list-item {
   background-color: #e8f5e9;
