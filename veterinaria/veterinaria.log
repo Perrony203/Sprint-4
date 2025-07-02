@@ -114,3 +114,12 @@ NameError: name 'BitacoraConsultaForm' is not defined. Did you mean: 'BitacoraCo
 [2025-07-01 23:59:30,960] INFO django.utils.autoreload D:\Universidad\2025-1\Curso Py\Sprint 4\Sprint-4\veterinaria\veterinaria\urls.py changed, reloading.
 [2025-07-01 23:59:32,260] INFO django.utils.autoreload Watching for file changes with StatReloader
 [2025-07-01 23:59:42,328] INFO veterinariapp.views Acceso a lista_mascotas por usuario AnonymousUser
+[2025-07-02 00:01:27,429] INFO veterinariapp.views Acceso a lista_mascotas por usuario AnonymousUser
+[2025-07-02 00:01:53,390] INFO veterinariapp.views Acceso a lista_mascotas por usuario AnonymousUser
+[2025-07-02 00:02:33,513] INFO veterinariapp.views Acceso a lista_mascotas por usuario AnonymousUser
+[2025-07-02 00:02:57,376] INFO veterinariapp.views Acceso a lista_mascotas por usuario AnonymousUser
+[2025-07-02 00:03:07,133] INFO veterinariapp.views Acceso a inicioView por usuario AnonymousUser
+[2025-07-02 00:07:00,629] INFO veterinariapp.views Acceso a landingView por usuario AnonymousUser
+[2025-07-02 00:07:03,775] INFO veterinariapp.views Acceso a inicioView por usuario AnonymousUser
+[2025-07-02 00:07:11,464] INFO veterinariapp.views Acceso a lista_propietarios por usuario AnonymousUser
+[2025-07-02 00:07:12,180] INFO veterinariapp.views Acceso a inicioView por usuario AnonymousUser
