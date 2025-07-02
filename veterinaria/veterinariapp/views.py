@@ -1,9 +1,14 @@
 from django.shortcuts import render, redirect
-from .forms import PropietarioForm, MascotaForm
+from .forms import PropietarioForm, MascotaForm, CitaForm
+from .models import Cita
 
 # Página principal de bienvenida
 def landingView(request):
     return render(request, 'landing.html')
+
+# Página de inicio/Sobre nosotros
+def inicioView(request):
+    return render(request, 'inicio.html')
 
 # Vista para registrar un nuevo propietario
 def registrar_propietario(request):
@@ -38,3 +43,17 @@ def lista_mascotas(request):
     from .models import Mascota
     mascotas = Mascota.objects.all()
     return render(request, 'lista_mascotas.html', {'mascotas': mascotas})
+
+def registrar_cita(request):
+    if request.method == 'POST':
+        form = CitaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('lista_citas')
+    else:
+        form = CitaForm()
+    return render(request, 'registrar_cita.html', {'form': form})
+
+def lista_citas(request):
+    citas = Cita.objects.select_related('mascota', 'mascota__propietario').all().order_by('-fecha_hora')
+    return render(request, 'lista_citas.html', {'citas': citas})

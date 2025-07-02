@@ -5,58 +5,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre Nosotros - vEterInariA</title>
+  <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
   <link rel="stylesheet" href="{% static 'src/styles_inicio.css' %}">
 </head>
 <body>
-  <header class="encabezado">
-    <h1>🐾 vEterInariA</h1>
-    <p>Cuidamos a tus mascotas como parte de nuestra familia</p>
-  </header>
-  <section class="grid-tarjetas">
-    <div class="tarjeta">
-        <section class="quienes-somos">
-            <h2>¿Quiénes somos?</h2>
-            <p>
-            Somos una clínica veterinaria comprometida con la salud y el bienestar de tus animales de compañía.
-            Contamos con un equipo profesional, instalaciones modernas y un amor profundo por cada mascota que llega a nosotros.
-            </p>
-        </section>
-    </div>
-    <div class="tarjeta">
-        <section class="img-ini-container">
-            <img src="{% static 'src/resources/images/vet_1.jpg' %}" class="img-ini">
-        </section>
-    </div>
-    <div class="tarjeta">
-        <section class="img-ini-container">
-            <img src="{% static 'src/resources/images/vet_2.png' %}" class="img-ini">
-        </section>
-    </div> 
-    <div class="tarjeta">
-        <section class="servicios">
-        <h2>Nuestros servicios</h2>
-        <ul>
-        <li>✅ Consultas generales</li>
-        <li>✅ Vacunación y desparasitación</li>
-        <li>✅ Cirugías menores y mayores</li>
-        <li>✅ Peluquería canina y felina</li>
-        <li>✅ Emergencias 24/7</li>
-        <li>✅ Venta de alimentos y medicamentos</li>
-        </ul>
-        </section>
-    </div>
-  </section>    
+  {% include "topbar.html" %}
 
-    
+  <div class="main-container">
+    <section class="grid-tarjetas">
+      <div class="tarjeta">
+          <section class="quienes-somos">
+              <h2>¿Quiénes somos?</h2>
+              <p>
+              Somos una clínica veterinaria comprometida con la salud y el bienestar de tus animales de compañía.
+              Contamos con un equipo profesional, instalaciones modernas y un amor profundo por cada mascota que llega a nosotros.
+              </p>
+          </section>
+      </div>
+      <div class="tarjeta">
+          <section class="img-ini-container">
+              <img src="{% static 'src/resources/images/vet_1.jpg' %}" class="img-ini">
+          </section>
+      </div>
+      <div class="tarjeta">
+          <section class="img-ini-container">
+              <img src="{% static 'src/resources/images/vet_2.png' %}" class="img-ini">
+          </section>
+      </div> 
+      <div class="tarjeta">
+          <section class="servicios">
+          <h2>Nuestros servicios</h2>
+          <ul>
+          <li>✅ Consultas generales</li>
+          <li>✅ Vacunación y desparasitación</li>
+          <li>✅ Cirugías menores y mayores</li>
+          <li>✅ Peluquería canina y felina</li>
+          <li>✅ Emergencias 24/7</li>
+          <li>✅ Venta de alimentos y medicamentos</li>
+          </ul>
+          </section>
+      </div>
+    </section>    
 
-  <section class="contacto">
-    <h2>Contáctanos</h2>
-    <p>📍 Dirección: Calle 123 #45-67, Ciudad Animal</p>
-    <p>📞 Teléfono: 302 363 6319</p>
-    <p>📧 Email: contacto@vidanimal.com</p>
-  </section>
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+      <p>📍 Dirección: Calle 123 #45-67, Ciudad Animal</p>
+      <p>📞 Teléfono: 302 363 6319</p>
+      <p>📧 Email: contacto@vidanimal.com</p>
+    </section>
+  </div>
 
-  <footer class="pie">
+  <footer class="footer">
     <p>&copy; 2025 Veterinaria Vida Animal - Todos los derechos reservados</p>
   </footer>
 </body>

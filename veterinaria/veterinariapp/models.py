@@ -18,3 +18,12 @@ class Mascota(models.Model):
 
     def __str__(self):
         return f"{self.nombre} ({self.especie})"
+
+class Cita(models.Model):
+    mascota = models.ForeignKey(Mascota, on_delete=models.CASCADE, related_name='citas')
+    fecha_hora = models.DateTimeField()
+    motivo = models.CharField(max_length=200)
+    notas = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return f"Cita para {self.mascota.nombre} el {self.fecha_hora.strftime('%d/%m/%Y %H:%M')}"

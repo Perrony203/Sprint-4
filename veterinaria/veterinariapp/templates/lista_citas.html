@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Propietarios - vEterInariA</title>
+    <title>Lista de Citas - vEterInariA</title>
     <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
 </head>
 <body>
@@ -12,24 +12,24 @@
 
     <div class="main-container">
         <div class="card">
-            <h2>👥 Lista de Propietarios Registrados</h2>
-            
-            {% if propietarios %}
+            <h2>📋 Lista de Citas</h2>
+            {% if citas %}
                 <ul style="list-style: none; padding: 0;">
-                    {% for propietario in propietarios %}
+                    {% for cita in citas %}
                         <li class="list-item">
-                            <strong>{{ propietario.nombre }} {{ propietario.apellido }}</strong>
-                            <br>
-                            <small>📞 {{ propietario.telefono }} | 📧 {{ propietario.email }}</small>
+                            <strong>Mascota:</strong> {{ cita.mascota.nombre }}<br>
+                            <strong>Propietario:</strong> {{ cita.mascota.propietario.nombre }} {{ cita.mascota.propietario.apellido }}<br>
+                            <strong>Fecha y hora:</strong> {{ cita.fecha_hora|date:'d/m/Y H:i' }}<br>
+                            <strong>Motivo:</strong> {{ cita.motivo }}<br>
+                            {% if cita.notas %}<strong>Notas:</strong> {{ cita.notas }}<br>{% endif %}
                         </li>
                     {% endfor %}
                 </ul>
             {% else %}
-                <p>No hay propietarios registrados.</p>
+                <p>No hay citas registradas.</p>
             {% endif %}
-            
             <div style="margin-top: 2rem;">
-                <a href="{% url 'registrar_propietario' %}" class="btn">➕ Registrar Nuevo Propietario</a>
+                <a href="{% url 'registrar_cita' %}" class="btn">➕ Registrar Nueva Cita</a>
                 <a href="{% url 'inicio' %}" class="btn btn-secondary">🏠 Volver al Inicio</a>
             </div>
         </div>

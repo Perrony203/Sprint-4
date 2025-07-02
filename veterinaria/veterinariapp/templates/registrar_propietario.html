@@ -1,18 +1,49 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registrar Propietario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Propietario - vEterInariA</title>
+    <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
 </head>
 <body>
-    <h1>Registrar Propietario</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Registrar</button>
-    </form>
-    <a href="{% url 'lista_propietarios' %}">Ver lista de propietarios</a>
-    <br>
-    <a href="/">Volver al inicio</a>
+    {% include "topbar.html" %}
+
+    <div class="main-container">
+        <div class="card">
+            <h2>👤 Registrar Nuevo Propietario</h2>
+            
+            <form method="post">
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="form-group">
+                        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                        {{ field }}
+                        {% if field.help_text %}
+                            <small style="color: #666; display: block; margin-top: 0.25rem;">{{ field.help_text }}</small>
+                        {% endif %}
+                        {% if field.errors %}
+                            <div style="color: #dc3545; font-size: 0.875rem; margin-top: 0.25rem;">
+                                {% for error in field.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                
+                <div style="margin-top: 2rem;">
+                    <button type="submit" class="btn">💾 Registrar Propietario</button>
+                    <a href="{% url 'lista_propietarios' %}" class="btn btn-secondary">📋 Ver Lista de Propietarios</a>
+                    <a href="{% url 'inicio' %}" class="btn btn-secondary">🏠 Volver al Inicio</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Veterinaria Vida Animal - Todos los derechos reservados</p>
+    </footer>
 </body>
 </html> 

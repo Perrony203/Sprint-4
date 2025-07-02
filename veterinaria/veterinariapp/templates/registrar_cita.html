@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Mascota - vEterInariA</title>
+    <title>Registrar Cita - vEterInariA</title>
     <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
 </head>
 <body>
@@ -12,8 +12,7 @@
 
     <div class="main-container">
         <div class="card">
-            <h2>🐕 Registrar Nueva Mascota</h2>
-            
+            <h2>📅 Registrar Nueva Cita</h2>
             <form method="post">
                 {% csrf_token %}
                 {% for field in form %}
@@ -32,10 +31,9 @@
                         {% endif %}
                     </div>
                 {% endfor %}
-                
                 <div style="margin-top: 2rem;">
-                    <button type="submit" class="btn">💾 Registrar Mascota</button>
-                    <a href="{% url 'lista_mascotas' %}" class="btn btn-secondary">📋 Ver Lista de Mascotas</a>
+                    <button type="submit" class="btn">💾 Registrar Cita</button>
+                    <a href="{% url 'lista_citas' %}" class="btn btn-secondary">📋 Ver Lista de Citas</a>
                     <a href="{% url 'inicio' %}" class="btn btn-secondary">🏠 Volver al Inicio</a>
                 </div>
             </form>

@@ -4,20 +4,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Veterinaria Vida Animal</title>
-  <link rel="stylesheet" href="{% static 'src/styles_landing.css' %}">
+  <title>Bienvenidos - vEterInariA</title>
+  <link rel="stylesheet" href="{% static 'src/styles_base.css' %}">
+  <style>
+    .landing-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    
+    .welcome-card {
+      background-color: white;
+      padding: 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    .welcome-title {
+      font-size: 2.5rem;
+      color: #2e7d32;
+      margin-bottom: 1rem;
+    }
+    
+    .welcome-description {
+      color: #374151;
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    
+    .welcome-btn {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .welcome-btn:hover {
+      background-color: #1b5e20;
+    }
+  </style>
 </head>
-<body class="fondo">
-  <div class="contenedor">
-    <h1 class="titulo">Bienvenidos a vEterInariA</h1>
-    <p class="descripcion">
-      Cuidamos con amor y profesionalismo la salud de tus mascotas.
-    </p>
-    <p class="descripcion">
-       Gracias por confiar en nosotros.
-    </p>
-    <a href="/inicio" class="boton">Ingresar</a>
+<body>
+  <!-- Topbar (oculta en landing, pero preparada para consistencia) -->
+  <!--
+  <nav class="topbar">
+    <a href="{% url 'inicio' %}" class="logo">
+      <h1>🐾 vEterInariA</h1>
+      <p>Cuidamos a tus mascotas como parte de nuestra familia</p>
+    </a>
+    <div class="nav-links">
+      <a href="{% url 'registrar_propietario' %}">Registrar Propietario</a>
+      <a href="{% url 'registrar_mascota' %}">Registrar Mascota</a>
+      <a href="{% url 'registrar_cita' %}">Registrar Cita</a>
+      <a href="{% url 'lista_propietarios' %}">Propietarios</a>
+      <a href="{% url 'lista_mascotas' %}">Mascotas</a>
+      <a href="{% url 'lista_citas' %}">Citas</a>
+      <a href="#" class="login-btn">Iniciar Sesión</a>
+    </div>
+  </nav>
+  -->
+  <div class="landing-container">
+    <div class="welcome-card">
+      <h1 class="welcome-title">🐾 Bienvenidos a vEterInariA</h1>
+      <p class="welcome-description">
+        Cuidamos con amor y profesionalismo la salud de tus mascotas.
+      </p>
+      <p class="welcome-description">
+        Gracias por confiar en nosotros.
+      </p>
+      <a href="{% url 'inicio' %}" class="welcome-btn">🚀 Ingresar al Sistema</a>
+    </div>
   </div>
-
 </body>
 </html>
